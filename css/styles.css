@@ -46,6 +46,10 @@ img {
   padding: 120px 0;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .logo {
   font-size: 18px;
   font-weight: 700;
@@ -54,6 +58,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-part {
@@ -76,19 +81,18 @@ img {
 
 .header .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .header .header-nav-wrapper {
   display: flex;
   gap: 40px;
   margin-left: 76px;
-  align-items: center;
 }
 
 .header .header-address-wrapper {
   display: flex;
   gap: 40px;
-  align-items: center;
 }
 
 .header .menu-item {
@@ -122,7 +126,7 @@ img {
 
 .first-section {
   background-color: #2e2f42;
-  padding: 188px;
+  padding: 188px 0;
 }
 
 .main-title {
@@ -132,7 +136,7 @@ img {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
 }
 
@@ -140,7 +144,7 @@ img {
   margin: 0 auto;
   margin-top: 48px;
   display: block;
-  width: 169px;
+  min-width: 169px;
   min-height: 56px;
   font-weight: 500;
   line-height: 1.5;
@@ -149,6 +153,8 @@ img {
   background-color: #4d5ae5;
   text-align: center;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .first-section .first-section-btn:hover {
@@ -167,6 +173,7 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .benefits-wrapper {
@@ -174,8 +181,12 @@ img {
   gap: 24px;
 }
 
-.benefits .item-text {
-  margin-top: 8px;
+.benefits .benefits-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.benefits .item-title {
+  margin-bottom: 8px;
 }
 
 .item-title {
@@ -184,6 +195,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-section {
@@ -191,7 +203,6 @@ img {
 }
 
 .team-section .team-wrapper {
-  margin-top: 72px;
   display: flex;
   gap: 24px;
 }
@@ -199,6 +210,7 @@ img {
 .team-section .team-item {
   background-color: #fff;
   flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-section .team-item-content {
@@ -206,9 +218,16 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 8px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 32px 0;
+}
+
+.team-section .team-title {
+  text-align: center;
+}
+
+.team-section .item-text {
+  text-align: center;
 }
 
 .portfolio .portfolio-wrapper {
@@ -239,6 +258,11 @@ img {
   padding: 100px 0;
 }
 
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer .logo-part {
   color: #f4f4fd;
 }
@@ -246,5 +270,4 @@ img {
 .footer-text {
   color: #f4f4fd;
   width: 264px;
-  margin-top: 16px;
 }
