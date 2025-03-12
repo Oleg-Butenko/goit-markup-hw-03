@@ -12,8 +12,38 @@ a {
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .logo {
@@ -28,6 +58,37 @@ ul {
 
 .logo-part {
   color: #2e2f42;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  padding: 24px 0;
+}
+
+.header .header-nav {
+  display: flex;
+}
+
+.header .header-nav-wrapper {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+  align-items: center;
+}
+
+.header .header-address-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .header .menu-item {
@@ -61,6 +122,7 @@ ul {
 
 .first-section {
   background-color: #2e2f42;
+  padding: 188px;
 }
 
 .main-title {
@@ -70,9 +132,16 @@ ul {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  width: 496px;
+  margin: 0 auto;
 }
 
 .first-section .first-section-btn {
+  margin: 0 auto;
+  margin-top: 48px;
+  display: block;
+  width: 169px;
+  min-height: 56px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -100,6 +169,15 @@ ul {
   text-transform: capitalize;
 }
 
+.benefits-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits .item-text {
+  margin-top: 8px;
+}
+
 .item-title {
   font-weight: 500;
   font-size: 20px;
@@ -112,12 +190,53 @@ ul {
   background-color: #f4f4fd;
 }
 
+.team-section .team-wrapper {
+  margin-top: 72px;
+  display: flex;
+  gap: 24px;
+}
+
 .team-section .team-item {
   background-color: #fff;
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.team-section .team-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.portfolio .portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio .portfolio-item {
+  flex-basis: calc((100% - 72px) / 6);
+}
+
+.portfolio .portfolio-item-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer .logo-part {
@@ -126,4 +245,6 @@ ul {
 
 .footer-text {
   color: #f4f4fd;
+  width: 264px;
+  margin-top: 16px;
 }
