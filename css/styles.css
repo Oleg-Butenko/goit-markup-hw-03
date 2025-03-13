@@ -85,10 +85,6 @@ img {
   align-items: center;
 }
 
-.header a {
-  padding: 24px 0;
-}
-
 .header .header-nav {
   display: flex;
   align-items: center;
@@ -97,7 +93,6 @@ img {
 .header .header-nav-wrapper {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .header .header-address-wrapper {
@@ -108,6 +103,8 @@ img {
 .header .menu-item {
   color: #2e2f42;
   font-weight: 500;
+  display: block;
+  padding: 24px 0;
 }
 
 .header .menu-item:hover {
@@ -195,11 +192,6 @@ img {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.benefits .item-title {
-  margin-bottom: 8px;
-  text-align: center;
-}
-
 .item-title {
   font-weight: 500;
   font-size: 20px;
@@ -225,11 +217,6 @@ img {
 }
 
 .team-section .team-item-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
   padding: 32px 0;
 }
 
@@ -257,7 +244,6 @@ img {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
   padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
