@@ -110,6 +110,8 @@ img {
   color: #2e2f42;
   display: block;
   padding: 24px 0;
+  transition-property: color;
+  transition-duration: 0.5s;
 }
 
 .header-menu-link:hover,
@@ -128,6 +130,8 @@ img {
 }
 .header-address-link {
   color: #434455;
+  transition-property: color;
+  transition-duration: 0.5s;
 }
 
 .header-address-link:hover,
